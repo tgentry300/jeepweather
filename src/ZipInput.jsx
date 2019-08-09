@@ -16,9 +16,16 @@ export default () => {
         dispatch(fetchWeatherInfo(inputValue))
     }
 
+    const handleEnter = e => {
+        if (e.key === "Enter"){
+            dispatch(fetchWeatherInfo(inputValue))
+        }
+    }
+
     return (
         <div id="input_container">
             <Input
+                onKeyDown={handleEnter}
                 style={{width: '300px'}}
                 onChange={handleInputChange}
                 placeholder="Enter your Zip Code"

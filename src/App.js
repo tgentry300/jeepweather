@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import WeatherCard from './WeatherCard';
+import WeatherLayout from './WeatherLayout';
 import ZipInput from './ZipInput';
 
 function App() {
     return (
         <React.Fragment>
             <ZipInput/>
-            <WeatherCard/>
+            <WeatherLayout/>
         </React.Fragment>
     );
 }
